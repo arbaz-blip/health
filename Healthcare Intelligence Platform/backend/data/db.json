@@ -1,0 +1,922 @@
+{
+  "users": [
+    {
+      "id": "11111111-1111-1111-1111-111111111111",
+      "email": "admin@hospital.com",
+      "password_hash": "$2b$12$RXElT8FdIUgnvy0MW7ycku5O9MypEyoHXANwl/6Eq3wF3dioyRGPW",
+      "role": "Super Administrator",
+      "full_name": "Dr. Arthur Pendelton",
+      "is_active": true
+    },
+    {
+      "id": "u2",
+      "email": "frontdesk@hospital.com",
+      "password_hash": "$2b$12$RXElT8FdIUgnvy0MW7ycku5O9MypEyoHXANwl/6Eq3wF3dioyRGPW",
+      "role": "Front Desk Officer",
+      "full_name": "Sarah Miller",
+      "is_active": true
+    },
+    {
+      "id": "u3",
+      "email": "nurse@hospital.com",
+      "password_hash": "$2b$12$RXElT8FdIUgnvy0MW7ycku5O9MypEyoHXANwl/6Eq3wF3dioyRGPW",
+      "role": "Emergency Nurse",
+      "full_name": "Jane Foster, RN",
+      "is_active": true
+    },
+    {
+      "id": "u4",
+      "email": "doctor@hospital.com",
+      "password_hash": "$2b$12$RXElT8FdIUgnvy0MW7ycku5O9MypEyoHXANwl/6Eq3wF3dioyRGPW",
+      "role": "Emergency Doctor",
+      "full_name": "Dr. Gregory House",
+      "is_active": true
+    },
+    {
+      "id": "u5",
+      "email": "tech@hospital.com",
+      "password_hash": "$2b$12$RXElT8FdIUgnvy0MW7ycku5O9MypEyoHXANwl/6Eq3wF3dioyRGPW",
+      "role": "Laboratory Technician",
+      "full_name": "Mark Ruffalo",
+      "is_active": true
+    },
+    {
+      "id": "u6",
+      "email": "supervisor@hospital.com",
+      "password_hash": "$2b$12$RXElT8FdIUgnvy0MW7ycku5O9MypEyoHXANwl/6Eq3wF3dioyRGPW",
+      "role": "Laboratory Supervisor",
+      "full_name": "Dr. Robert Bruce",
+      "is_active": true
+    },
+    {
+      "id": "u7",
+      "email": "manager@hospital.com",
+      "password_hash": "$2b$12$RXElT8FdIUgnvy0MW7ycku5O9MypEyoHXANwl/6Eq3wF3dioyRGPW",
+      "role": "Reporting Manager",
+      "full_name": "Walter White",
+      "is_active": true
+    },
+    {
+      "id": "8af7d67a-50ba-491c-8b7b-710780d56a79",
+      "email": "asif@hospital.com",
+      "password_hash": "$2b$12$3zhapY.PUq1qABKXI4UG.OlAdwvGRFQ/fR2onnSjkGxDBsvzTasrm",
+      "role": "Reporting Manager",
+      "full_name": "Asif",
+      "is_active": true,
+      "mfa_enabled": false,
+      "mfa_secret": null
+    },
+    {
+      "id": "06b3df56-17e6-42f5-8425-56f0356d251d",
+      "email": "1234@hospital.com",
+      "password_hash": "$2b$12$PxYfh3nNEtkehxhVxO1/9OmoB5dQE/6Q1Ivrtpo5RcDTkpwjElHqO",
+      "role": "Reporting Manager",
+      "full_name": "Asif",
+      "is_active": true,
+      "mfa_enabled": false,
+      "mfa_secret": null
+    },
+    {
+      "id": "5adddc17-347a-45a5-b2ab-e266f37c2796",
+      "email": "akbar@hospital.com",
+      "password_hash": "$2b$12$cWrurmVTazC66O27pQNwnuYNN772tRjWmM4l9Jlr2OZAq51UlVFha",
+      "role": "Super Administrator",
+      "full_name": "Akbar Shah Khan",
+      "is_active": true,
+      "mfa_enabled": false,
+      "mfa_secret": null
+    }
+  ],
+  "patients": [
+    {
+      "id": "p1",
+      "mrn": "MRN-2026-00045",
+      "full_name": "John Doe",
+      "cnic": "42101-1234567-1",
+      "passport_number": null,
+      "gender": "Male",
+      "dob": "1990-05-15",
+      "phone": "+923001234567",
+      "email": "john.doe@email.com",
+      "address_street": "Flat 204, Alpha Heights",
+      "address_city": "Metropolis",
+      "address_state": "Central Province",
+      "address_postal_code": "44000",
+      "blood_group": "O+",
+      "emergency_contact_name": "Mary Doe",
+      "emergency_contact_relation": "Spouse",
+      "emergency_contact_phone": "+923001112223",
+      "consent_accepted": true,
+      "created_at": "2026-06-24T17:13:13.890Z"
+    },
+    {
+      "id": "p2",
+      "mrn": "MRN-2026-00046",
+      "full_name": "Jane Watson",
+      "cnic": "42101-9876543-2",
+      "passport_number": null,
+      "gender": "Female",
+      "dob": "1988-11-20",
+      "phone": "+923009876543",
+      "email": "jane.watson@email.com",
+      "address_street": "45 Medical Avenue",
+      "address_city": "Metropolis",
+      "address_state": "Central Province",
+      "address_postal_code": "44000",
+      "blood_group": "A+",
+      "emergency_contact_name": "Robert Watson",
+      "emergency_contact_relation": "Spouse",
+      "emergency_contact_phone": "+923001112223",
+      "consent_accepted": true,
+      "created_at": "2026-06-24T17:13:13.890Z"
+    },
+    {
+      "id": "p-qtdmrat",
+      "mrn": "MRN-2026-00047",
+      "full_name": "ASK",
+      "cnic": null,
+      "passport_number": null,
+      "gender": "Male",
+      "dob": "2026-06-25",
+      "phone": "+923062223339",
+      "email": null,
+      "address_street": "",
+      "address_city": "",
+      "address_state": "Punjab",
+      "address_postal_code": null,
+      "blood_group": "Unknown",
+      "emergency_contact_name": "ASK",
+      "emergency_contact_relation": "mother",
+      "emergency_contact_phone": "+923062223330",
+      "consent_accepted": true,
+      "created_at": "2026-06-24T17:20:38.899Z"
+    },
+    {
+      "id": "p-d2d5wq5",
+      "mrn": "MRN-2026-00048",
+      "full_name": "Saba",
+      "cnic": "42201-3344334-1",
+      "passport_number": null,
+      "gender": "Female",
+      "dob": "1985-10-16",
+      "phone": "+92 332 8884443",
+      "email": null,
+      "address_street": "Gulshan",
+      "address_city": "Karachi",
+      "address_state": "Punjab",
+      "address_postal_code": null,
+      "blood_group": "B+",
+      "emergency_contact_name": "Akbar",
+      "emergency_contact_relation": "Spouse",
+      "emergency_contact_phone": "+92 306 2223330",
+      "consent_accepted": true,
+      "created_at": "2026-06-25T08:35:39.902Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "appt1",
+      "patient_id": "p1",
+      "doctor_id": "u4",
+      "department_id": 2,
+      "scheduled_time": "2026-06-24T19:13:13.890Z",
+      "status": "Scheduled",
+      "created_at": "2026-06-24T17:13:13.890Z"
+    },
+    {
+      "id": "appt2",
+      "patient_id": "p2",
+      "doctor_id": "u4",
+      "department_id": 1,
+      "scheduled_time": "2026-06-24T21:13:13.890Z",
+      "status": "Checked-in",
+      "created_at": "2026-06-24T17:13:13.890Z"
+    }
+  ],
+  "queues": [
+    {
+      "id": "q1",
+      "token_number": "GENMED-001",
+      "patient_id": "p1",
+      "department_id": 2,
+      "doctor_id": "u4",
+      "status": "Completed",
+      "checked_in_time": "2026-06-24T16:53:13.890Z",
+      "serving_time": "2026-06-24T17:08:13.890Z",
+      "completed_time": "2026-06-25T09:49:54.017Z"
+    },
+    {
+      "id": "q2",
+      "token_number": "PEDS-001",
+      "patient_id": "p2",
+      "department_id": 1,
+      "doctor_id": null,
+      "status": "Completed",
+      "checked_in_time": "2026-06-24T17:03:13.890Z",
+      "serving_time": "2026-06-24T17:19:28.329Z",
+      "completed_time": "2026-06-24T17:19:30.005Z"
+    },
+    {
+      "id": "q-nbz2xrz",
+      "token_number": "LAB-001",
+      "patient_id": "p-d2d5wq5",
+      "department_id": 4,
+      "doctor_id": null,
+      "status": "Serving",
+      "checked_in_time": "2026-06-25T08:35:57.515Z",
+      "serving_time": "2026-06-25T08:37:01.994Z"
+    },
+    {
+      "id": "q-2y8r841",
+      "token_number": "ER-001",
+      "patient_id": "p1",
+      "department_id": 3,
+      "doctor_id": null,
+      "status": "Serving",
+      "checked_in_time": "2026-06-25T08:37:17.904Z",
+      "serving_time": "2026-06-25T08:37:21.089Z"
+    }
+  ],
+  "emergencyIntakes": [
+    {
+      "id": "er1",
+      "patient_id": "p1",
+      "temporary_name": null,
+      "arrival_time": "2026-06-24T16:43:13.890Z",
+      "mode_of_arrival": "Ambulance",
+      "ambulance_service": "Red Crescent",
+      "ambulance_plate_number": "LE-9908",
+      "initial_condition": "Severe chest pain, shortness of breath, diaphoresis",
+      "status": "Waiting for Triage",
+      "created_at": "2026-06-24T17:13:13.890Z"
+    },
+    {
+      "id": "er2",
+      "patient_id": null,
+      "temporary_name": "Unknown Male 01",
+      "arrival_time": "2026-06-24T16:18:13.890Z",
+      "mode_of_arrival": "Police",
+      "initial_condition": "Road traffic accident, multiple lacerations, semi-conscious",
+      "status": "Triage Completed",
+      "created_at": "2026-06-24T17:13:13.890Z"
+    },
+    {
+      "id": "er-jaxw9u1",
+      "patient_id": null,
+      "temporary_name": "ASK",
+      "arrival_time": "2026-06-25T08:38:00.093Z",
+      "mode_of_arrival": "Self",
+      "ambulance_service": null,
+      "ambulance_plate_number": null,
+      "emergency_contact_name": null,
+      "emergency_contact_phone": null,
+      "initial_condition": "headache",
+      "status": "Waiting for Triage",
+      "created_at": "2026-06-25T08:38:00.093Z"
+    }
+  ],
+  "emergencyTriages": [
+    {
+      "id": "tr1",
+      "emergency_intake_id": "er2",
+      "triage_nurse_id": "u3",
+      "bp_systolic": 90,
+      "bp_diastolic": 60,
+      "pulse_rate": 115,
+      "temperature_celsius": 36.8,
+      "oxygen_saturation": 92,
+      "respiratory_rate": 22,
+      "consciousness_level": "Voice",
+      "priority_level": "High",
+      "created_at": "2026-06-24T16:33:13.890Z"
+    }
+  ],
+  "labOrders": [
+    {
+      "id": "order-001",
+      "patient_id": "p1",
+      "ordering_doctor_id": "u4",
+      "status": "Ordered",
+      "clinical_notes": "Patient presenting with fatigue and pallor. Check for anaemia.",
+      "created_at": "2026-06-24T16:13:13.890Z"
+    },
+    {
+      "id": "order-002",
+      "patient_id": "p2",
+      "ordering_doctor_id": "u4",
+      "status": "Sample Collected",
+      "clinical_notes": "Routine annual panel. Patient stable.",
+      "created_at": "2026-06-24T15:43:13.890Z"
+    },
+    {
+      "id": "order-003",
+      "patient_id": "p1",
+      "ordering_doctor_id": "u4",
+      "status": "Processing",
+      "clinical_notes": "Follow-up WBC check post-infection.",
+      "created_at": "2026-06-24T15:13:13.890Z"
+    },
+    {
+      "id": "order-qjbga6b",
+      "patient_id": "p-d2d5wq5",
+      "ordering_doctor_id": "11111111-1111-1111-1111-111111111111",
+      "status": "Ordered",
+      "clinical_notes": "test",
+      "created_at": "2026-06-25T08:38:28.904Z"
+    }
+  ],
+  "labSamples": [
+    {
+      "id": "sample-001",
+      "lab_order_id": "order-002",
+      "sample_number": "SMP-20261001",
+      "sample_type": "Whole Blood",
+      "collection_time": "2026-06-24T15:58:13.890Z",
+      "collector_id": "u5",
+      "status": "Received"
+    },
+    {
+      "id": "sample-002",
+      "lab_order_id": "order-003",
+      "sample_number": "SMP-20261002",
+      "sample_type": "Serum",
+      "collection_time": "2026-06-24T15:28:13.890Z",
+      "collector_id": "u5",
+      "status": "Received"
+    }
+  ],
+  "labResults": [
+    {
+      "id": "res-001a",
+      "lab_order_id": "order-001",
+      "test_code": "CBC_HEMOGLOBIN",
+      "test_name": "Hemoglobin",
+      "result_value": "",
+      "reference_range": "13.8 - 17.2",
+      "unit": "g/dL",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-001b",
+      "lab_order_id": "order-001",
+      "test_code": "LFT_ALT",
+      "test_name": "ALT (SGPT)",
+      "result_value": "",
+      "reference_range": "7 - 56",
+      "unit": "U/L",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-002a",
+      "lab_order_id": "order-002",
+      "test_code": "CBC_HEMOGLOBIN",
+      "test_name": "Hemoglobin",
+      "result_value": "",
+      "reference_range": "11.5 - 15.5",
+      "unit": "g/dL",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-002b",
+      "lab_order_id": "order-002",
+      "test_code": "CBC_WBC",
+      "test_name": "White Blood Cell (WBC)",
+      "result_value": "",
+      "reference_range": "4,500 - 11,000",
+      "unit": "/uL",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-003a",
+      "lab_order_id": "order-003",
+      "test_code": "CBC_WBC",
+      "test_name": "White Blood Cell (WBC)",
+      "result_value": "13200",
+      "reference_range": "4,500 - 11,000",
+      "unit": "/uL",
+      "is_flagged_critical": true,
+      "technician_id": "u5",
+      "entered_at": "2026-06-24T16:43:13.890Z",
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-mwqg5yy",
+      "lab_order_id": "order-qjbga6b",
+      "test_code": "CBC_HEMOGLOBIN",
+      "test_name": "Hemoglobin Panel",
+      "result_value": "",
+      "reference_range": "13.8 - 17.2",
+      "unit": "g/dL",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-02c1jbs",
+      "lab_order_id": "order-qjbga6b",
+      "test_code": "CBC_WBC",
+      "test_name": "White Blood Cell (WBC)",
+      "result_value": "",
+      "reference_range": "4,500 - 11,000",
+      "unit": "/uL",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-vxmp3jx",
+      "lab_order_id": "order-qjbga6b",
+      "test_code": "TYPHOID_WIDAL",
+      "test_name": "Typhoid Widal Antigen",
+      "result_value": "",
+      "reference_range": "Negative",
+      "unit": "titer",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-w4poltx",
+      "lab_order_id": "order-qjbga6b",
+      "test_code": "LFT_ALT",
+      "test_name": "ALT (SGPT) Liver",
+      "result_value": "",
+      "reference_range": "7 - 56",
+      "unit": "U/L",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    },
+    {
+      "id": "res-sedn023",
+      "lab_order_id": "order-qjbga6b",
+      "test_code": "DENGUE_NS1",
+      "test_name": "Dengue NS1 Antigen",
+      "result_value": "",
+      "reference_range": "Negative",
+      "unit": "Index",
+      "is_flagged_critical": false,
+      "status": "Pending Validation"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-vx7hd8v",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-24T17:13:54.609Z"
+    },
+    {
+      "id": "log-hiovf3g",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-24T17:14:18.361Z"
+    },
+    {
+      "id": "log-ncanfrc",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-24T17:19:08.949Z"
+    },
+    {
+      "id": "log-cnnr3u5",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "QUEUE_STATUS_UPDATE",
+      "table_name": "queues",
+      "record_id": "q2",
+      "old_values": "{\"id\":\"q2\",\"token_number\":\"PEDS-001\",\"patient_id\":\"p2\",\"department_id\":1,\"doctor_id\":null,\"status\":\"Waiting\",\"checked_in_time\":\"2026-06-24T17:03:13.890Z\"}",
+      "new_values": "{\"id\":\"q2\",\"token_number\":\"PEDS-001\",\"patient_id\":\"p2\",\"department_id\":1,\"doctor_id\":null,\"status\":\"Serving\",\"checked_in_time\":\"2026-06-24T17:03:13.890Z\",\"serving_time\":\"2026-06-24T17:19:28.329Z\"}",
+      "created_at": "2026-06-24T17:19:28.330Z"
+    },
+    {
+      "id": "log-sojdj4b",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "QUEUE_STATUS_UPDATE",
+      "table_name": "queues",
+      "record_id": "q2",
+      "old_values": "{\"id\":\"q2\",\"token_number\":\"PEDS-001\",\"patient_id\":\"p2\",\"department_id\":1,\"doctor_id\":null,\"status\":\"Serving\",\"checked_in_time\":\"2026-06-24T17:03:13.890Z\",\"serving_time\":\"2026-06-24T17:19:28.329Z\"}",
+      "new_values": "{\"id\":\"q2\",\"token_number\":\"PEDS-001\",\"patient_id\":\"p2\",\"department_id\":1,\"doctor_id\":null,\"status\":\"Completed\",\"checked_in_time\":\"2026-06-24T17:03:13.890Z\",\"serving_time\":\"2026-06-24T17:19:28.329Z\",\"completed_time\":\"2026-06-24T17:19:30.005Z\"}",
+      "created_at": "2026-06-24T17:19:30.006Z"
+    },
+    {
+      "id": "log-yi8sx9t",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "PATIENT_CREATE",
+      "table_name": "patients",
+      "record_id": "p-qtdmrat",
+      "old_values": null,
+      "new_values": "{\"id\":\"p-qtdmrat\",\"mrn\":\"MRN-2026-00047\",\"full_name\":\"ASK\",\"cnic\":null,\"passport_number\":null,\"gender\":\"Male\",\"dob\":\"2026-06-25\",\"phone\":\"+923062223339\",\"email\":null,\"address_street\":\"\",\"address_city\":\"\",\"address_state\":\"Punjab\",\"address_postal_code\":null,\"blood_group\":\"Unknown\",\"emergency_contact_name\":\"ASK\",\"emergency_contact_relation\":\"mother\",\"emergency_contact_phone\":\"+923062223330\",\"consent_accepted\":true,\"created_at\":\"2026-06-24T17:20:38.899Z\"}",
+      "created_at": "2026-06-24T17:20:38.899Z"
+    },
+    {
+      "id": "log-iauzuao",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "BILLING_INVOICE_CREATE",
+      "table_name": "billing_invoices",
+      "record_id": "inv-mzac91d",
+      "old_values": null,
+      "new_values": "{\"id\":\"inv-mzac91d\",\"patient_id\":\"p-qtdmrat\",\"total_amount\":1500,\"discount_amount\":0,\"net_amount\":1500,\"payment_status\":\"Unpaid\",\"created_at\":\"2026-06-24T17:21:35.651Z\"}",
+      "created_at": "2026-06-24T17:21:35.652Z"
+    },
+    {
+      "id": "log-m15d2a9",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "PAYMENT_CAPTURE",
+      "table_name": "payments",
+      "record_id": "pay-eifd3n1",
+      "old_values": null,
+      "new_values": "{\"id\":\"pay-eifd3n1\",\"invoice_id\":\"inv-002\",\"amount\":800,\"payment_method\":\"Cash\",\"transaction_reference\":null,\"captured_by\":\"11111111-1111-1111-1111-111111111111\",\"created_at\":\"2026-06-24T17:22:20.578Z\"}",
+      "created_at": "2026-06-24T17:22:20.579Z"
+    },
+    {
+      "id": "log-5uv9lhe",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-25T07:32:48.994Z"
+    },
+    {
+      "id": "log-d1stawx",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-25T07:57:35.732Z"
+    },
+    {
+      "id": "log-qbkuv4t",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-25T08:04:36.716Z"
+    },
+    {
+      "id": "log-7hwhhl7",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-25T08:04:51.213Z"
+    },
+    {
+      "id": "log-gsd3dac",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-25T08:05:31.849Z"
+    },
+    {
+      "id": "log-f13bzl8",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "USER_REGISTER",
+      "table_name": "users",
+      "record_id": "8af7d67a-50ba-491c-8b7b-710780d56a79",
+      "old_values": null,
+      "new_values": "{\"email\":\"asif@hospital.com\",\"role\":\"Reporting Manager\",\"full_name\":\"Asif\"}",
+      "created_at": "2026-06-25T08:05:32.158Z"
+    },
+    {
+      "id": "log-8wua7k3",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "USER_REGISTER",
+      "table_name": "users",
+      "record_id": "06b3df56-17e6-42f5-8425-56f0356d251d",
+      "old_values": null,
+      "new_values": "{\"email\":\"1234@hospital.com\",\"role\":\"Reporting Manager\",\"full_name\":\"Asif\"}",
+      "created_at": "2026-06-25T08:06:23.316Z"
+    },
+    {
+      "id": "log-1y5dnlu",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-25T08:19:11.245Z"
+    },
+    {
+      "id": "log-1xor6zu",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "USER_UPDATE",
+      "table_name": "users",
+      "record_id": "u2",
+      "old_values": "{\"full_name\":\"Sarah Miller\",\"role\":\"Front Desk Officer\",\"is_active\":true}",
+      "new_values": "{\"full_name\":\"Sarah Miller\",\"role\":\"Front Desk Officer\",\"is_active\":false}",
+      "created_at": "2026-06-25T08:30:20.290Z"
+    },
+    {
+      "id": "log-2rii2sr",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "USER_UPDATE",
+      "table_name": "users",
+      "record_id": "u2",
+      "old_values": "{\"full_name\":\"Sarah Miller\",\"role\":\"Front Desk Officer\",\"is_active\":false}",
+      "new_values": "{\"full_name\":\"Sarah Miller\",\"role\":\"Front Desk Officer\",\"is_active\":true}",
+      "created_at": "2026-06-25T08:30:21.780Z"
+    },
+    {
+      "id": "log-1gy4m09",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "USER_REGISTER",
+      "table_name": "users",
+      "record_id": "5adddc17-347a-45a5-b2ab-e266f37c2796",
+      "old_values": null,
+      "new_values": "{\"email\":\"akbar@hospital.com\",\"role\":\"Super Administrator\",\"full_name\":\"Akbar Shah Khan\"}",
+      "created_at": "2026-06-25T08:32:35.776Z"
+    },
+    {
+      "id": "log-lilz65c",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LAB_TEST_CATALOG_UPDATE",
+      "table_name": "lab_test_catalog",
+      "record_id": "lt1",
+      "old_values": "{\"id\":\"lt1\",\"code\":\"CBC_HEMOGLOBIN\",\"name\":\"Hemoglobin Panel\",\"reference_range\":\"13.8 - 17.2\",\"unit\":\"g/dL\",\"price\":450}",
+      "new_values": "{\"id\":\"lt1\",\"code\":\"CBC_HEMOGLOBIN\",\"name\":\"Hemoglobin Panel\",\"reference_range\":\"13.8 - 17.2\",\"unit\":\"g/dL\",\"price\":4000}",
+      "created_at": "2026-06-25T08:33:14.905Z"
+    },
+    {
+      "id": "log-ej13nlx",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "PATIENT_CREATE",
+      "table_name": "patients",
+      "record_id": "p-d2d5wq5",
+      "old_values": null,
+      "new_values": "{\"id\":\"p-d2d5wq5\",\"mrn\":\"MRN-2026-00048\",\"full_name\":\"Saba\",\"cnic\":\"42201-3344334-1\",\"passport_number\":null,\"gender\":\"Female\",\"dob\":\"1985-10-16\",\"phone\":\"+92 332 8884443\",\"email\":null,\"address_street\":\"Gulshan\",\"address_city\":\"Karachi\",\"address_state\":\"Punjab\",\"address_postal_code\":null,\"blood_group\":\"B+\",\"emergency_contact_name\":\"Akbar\",\"emergency_contact_relation\":\"Spouse\",\"emergency_contact_phone\":\"+92 306 2223330\",\"consent_accepted\":true,\"created_at\":\"2026-06-25T08:35:39.902Z\"}",
+      "created_at": "2026-06-25T08:35:39.906Z"
+    },
+    {
+      "id": "log-lqdavpa",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "QUEUE_TOKEN_GEN",
+      "table_name": "queues",
+      "record_id": "q-nbz2xrz",
+      "old_values": null,
+      "new_values": "{\"id\":\"q-nbz2xrz\",\"token_number\":\"LAB-001\",\"patient_id\":\"p-d2d5wq5\",\"department_id\":4,\"doctor_id\":null,\"status\":\"Waiting\",\"checked_in_time\":\"2026-06-25T08:35:57.515Z\"}",
+      "created_at": "2026-06-25T08:35:57.519Z"
+    },
+    {
+      "id": "log-69838d1",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "QUEUE_STATUS_UPDATE",
+      "table_name": "queues",
+      "record_id": "q-nbz2xrz",
+      "old_values": "{\"id\":\"q-nbz2xrz\",\"token_number\":\"LAB-001\",\"patient_id\":\"p-d2d5wq5\",\"department_id\":4,\"doctor_id\":null,\"status\":\"Waiting\",\"checked_in_time\":\"2026-06-25T08:35:57.515Z\"}",
+      "new_values": "{\"id\":\"q-nbz2xrz\",\"token_number\":\"LAB-001\",\"patient_id\":\"p-d2d5wq5\",\"department_id\":4,\"doctor_id\":null,\"status\":\"Serving\",\"checked_in_time\":\"2026-06-25T08:35:57.515Z\",\"serving_time\":\"2026-06-25T08:37:01.994Z\"}",
+      "created_at": "2026-06-25T08:37:01.995Z"
+    },
+    {
+      "id": "log-we5eroq",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "QUEUE_TOKEN_GEN",
+      "table_name": "queues",
+      "record_id": "q-2y8r841",
+      "old_values": null,
+      "new_values": "{\"id\":\"q-2y8r841\",\"token_number\":\"ER-001\",\"patient_id\":\"p1\",\"department_id\":3,\"doctor_id\":null,\"status\":\"Waiting\",\"checked_in_time\":\"2026-06-25T08:37:17.904Z\"}",
+      "created_at": "2026-06-25T08:37:17.904Z"
+    },
+    {
+      "id": "log-5eq3lnb",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "QUEUE_STATUS_UPDATE",
+      "table_name": "queues",
+      "record_id": "q-2y8r841",
+      "old_values": "{\"id\":\"q-2y8r841\",\"token_number\":\"ER-001\",\"patient_id\":\"p1\",\"department_id\":3,\"doctor_id\":null,\"status\":\"Waiting\",\"checked_in_time\":\"2026-06-25T08:37:17.904Z\"}",
+      "new_values": "{\"id\":\"q-2y8r841\",\"token_number\":\"ER-001\",\"patient_id\":\"p1\",\"department_id\":3,\"doctor_id\":null,\"status\":\"Serving\",\"checked_in_time\":\"2026-06-25T08:37:17.904Z\",\"serving_time\":\"2026-06-25T08:37:21.089Z\"}",
+      "created_at": "2026-06-25T08:37:21.090Z"
+    },
+    {
+      "id": "log-dj6oht5",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "EMERGENCY_INTAKE",
+      "table_name": "emergency_intakes",
+      "record_id": "er-jaxw9u1",
+      "old_values": null,
+      "new_values": "{\"id\":\"er-jaxw9u1\",\"patient_id\":null,\"temporary_name\":\"ASK\",\"arrival_time\":\"2026-06-25T08:38:00.093Z\",\"mode_of_arrival\":\"Self\",\"ambulance_service\":null,\"ambulance_plate_number\":null,\"emergency_contact_name\":null,\"emergency_contact_phone\":null,\"initial_condition\":\"headache\",\"status\":\"Waiting for Triage\",\"created_at\":\"2026-06-25T08:38:00.093Z\"}",
+      "created_at": "2026-06-25T08:38:00.101Z"
+    },
+    {
+      "id": "log-8p3vgcs",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LAB_ORDER_CREATE",
+      "table_name": "lab_orders",
+      "record_id": "order-qjbga6b",
+      "old_values": null,
+      "new_values": "{\"id\":\"order-qjbga6b\",\"patient_id\":\"p-d2d5wq5\",\"ordering_doctor_id\":\"11111111-1111-1111-1111-111111111111\",\"status\":\"Ordered\",\"clinical_notes\":\"test\",\"created_at\":\"2026-06-25T08:38:28.904Z\"}",
+      "created_at": "2026-06-25T08:38:28.906Z"
+    },
+    {
+      "id": "log-sixxhpb",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "QUEUE_STATUS_UPDATE",
+      "table_name": "queues",
+      "record_id": "q1",
+      "old_values": "{\"id\":\"q1\",\"token_number\":\"GENMED-001\",\"patient_id\":\"p1\",\"department_id\":2,\"doctor_id\":\"u4\",\"status\":\"Serving\",\"checked_in_time\":\"2026-06-24T16:53:13.890Z\",\"serving_time\":\"2026-06-24T17:08:13.890Z\"}",
+      "new_values": "{\"id\":\"q1\",\"token_number\":\"GENMED-001\",\"patient_id\":\"p1\",\"department_id\":2,\"doctor_id\":\"u4\",\"status\":\"Completed\",\"checked_in_time\":\"2026-06-24T16:53:13.890Z\",\"serving_time\":\"2026-06-24T17:08:13.890Z\",\"completed_time\":\"2026-06-25T09:49:54.017Z\"}",
+      "created_at": "2026-06-25T09:49:54.029Z"
+    },
+    {
+      "id": "log-1fpgztf",
+      "user_id": "5adddc17-347a-45a5-b2ab-e266f37c2796",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "5adddc17-347a-45a5-b2ab-e266f37c2796",
+      "old_values": null,
+      "new_values": "{\"email\":\"akbar@hospital.com\"}",
+      "created_at": "2026-06-25T09:51:27.497Z"
+    },
+    {
+      "id": "log-xsb94w9",
+      "user_id": "5adddc17-347a-45a5-b2ab-e266f37c2796",
+      "action": "BILLING_INVOICE_CREATE",
+      "table_name": "billing_invoices",
+      "record_id": "inv-x845z8k",
+      "old_values": null,
+      "new_values": "{\"id\":\"inv-x845z8k\",\"patient_id\":\"p-qtdmrat\",\"total_amount\":1500,\"discount_amount\":0,\"net_amount\":1500,\"payment_status\":\"Unpaid\",\"created_at\":\"2026-06-25T09:52:13.728Z\"}",
+      "created_at": "2026-06-25T09:52:13.729Z"
+    },
+    {
+      "id": "log-hibgmo3",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-25T18:17:03.798Z"
+    },
+    {
+      "id": "log-p0rn8dp",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-28T13:40:10.824Z"
+    },
+    {
+      "id": "log-98tbl9k",
+      "user_id": "u5",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "u5",
+      "old_values": null,
+      "new_values": "{\"email\":\"tech@hospital.com\"}",
+      "created_at": "2026-06-28T13:54:35.873Z"
+    },
+    {
+      "id": "log-67v41n8",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-28T13:54:57.245Z"
+    },
+    {
+      "id": "log-4hf1oxs",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "PAYMENT_CAPTURE",
+      "table_name": "payments",
+      "record_id": "pay-7sb3mz2",
+      "old_values": null,
+      "new_values": "{\"id\":\"pay-7sb3mz2\",\"invoice_id\":\"inv-002\",\"amount\":800,\"payment_method\":\"Cash\",\"transaction_reference\":null,\"captured_by\":\"11111111-1111-1111-1111-111111111111\",\"created_at\":\"2026-06-28T14:06:19.597Z\"}",
+      "created_at": "2026-06-28T14:06:19.605Z"
+    },
+    {
+      "id": "log-dwvbwxl",
+      "user_id": "u2",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "u2",
+      "old_values": null,
+      "new_values": "{\"email\":\"frontdesk@hospital.com\"}",
+      "created_at": "2026-06-30T08:32:20.466Z"
+    },
+    {
+      "id": "log-fxulupf",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-06-30T08:32:31.345Z"
+    }
+  ],
+  "clinicalVisits": [],
+  "diagnoses": [],
+  "prescriptions": [],
+  "labTestCatalog": [
+    {
+      "id": "lt1",
+      "code": "CBC_HEMOGLOBIN",
+      "name": "Hemoglobin Panel",
+      "reference_range": "13.8 - 17.2",
+      "unit": "g/dL",
+      "price": 4000
+    },
+    {
+      "id": "lt2",
+      "code": "CBC_WBC",
+      "name": "White Blood Cell (WBC)",
+      "reference_range": "4,500 - 11,000",
+      "unit": "/uL",
+      "price": 450
+    },
+    {
+      "id": "lt3",
+      "code": "LFT_ALT",
+      "name": "ALT (SGPT) Liver",
+      "reference_range": "7 - 56",
+      "unit": "U/L",
+      "price": 650
+    },
+    {
+      "id": "lt4",
+      "code": "TYPHOID_WIDAL",
+      "name": "Typhoid Widal Antigen",
+      "reference_range": "Negative",
+      "unit": "titer",
+      "price": 800
+    },
+    {
+      "id": "lt5",
+      "code": "DENGUE_NS1",
+      "name": "Dengue NS1 Antigen",
+      "reference_range": "Negative",
+      "unit": "Index",
+      "price": 1500
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Pediatrics",
+      "code": "PEDS"
+    },
+    {
+      "id": 2,
+      "name": "General Medicine",
+      "code": "GENMED"
+    },
+    {
+      "id": 3,
+      "name": "Emergency Room",
+      "code": "ER"
+    },
+    {
+      "id": 4,
+      "name": "Clinical Laboratory",
+      "code": "LAB"
+    },
+    {
+      "id": 5,
+      "name": "Radiology Department",
+      "code": "RAD"
+    },
+    {
+      "id": 6,
+      "name": "Pharmacy",
+      "code": "PHARM"
+    },
+    {
+      "id": 7,
+      "name": "Finance & Billing",
+      "code": "FIN"
+    }
+  ],
+  "systemSettings": {
+    "hospital_name": "PakMed Care General Hospital",
+    "contact_email": "admin@pakmedcare.com.pk",
+    "maintenance_mode": false
+  },
+  "billingInvoices": []
+}
