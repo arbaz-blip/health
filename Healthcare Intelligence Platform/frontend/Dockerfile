@@ -4,21 +4,16 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-# Set build environment variables so it points to the containerized backend
-ENV VITE_API_URL=http://localhost:5000/api/v1
+# Accept VITE_API_URL from Railway's build-time variables (set this in the service's Variables tab)
+ARG VITE_API_URL
+ENV VITE_API_URL=$VITE_API_URL
 RUN npm run build
 
 # Production Stage - Nginx to serve static files
 FROM nginx:alpine
 COPY --from=builder /app/dist /usr/share/nginx/html
-# Copy basic nginx config to handle SPA routing if needed
-RUN echo 'server { \
-    listen 80; \
-    location / { \
-        root /usr/share/nginx/html; \
-        index index.html index.htm; \
-        try_files $uri $uri/ /index.html; \
-    } \
-}' > /etc/nginx/conf.d/default.conf
+RUN rm -f /etc/nginx/conf.d/default.conf
+RUN printf 'server {\n    listen %s;\n    location / {\n        root /usr/share/nginx/html;\n        index index.html index.htm;\n        try_files $uri $uri/ /index.html;\n    }\n}\n' '${PORT}' > /etc/nginx/templates/default.conf.template
+ENV PORT=80
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
