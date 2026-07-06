@@ -1,6 +1,6 @@
 import { Router, Response } from 'express';
 import bcrypt from 'bcrypt';
-import { v4 as uuidv4 } from 'uuid';
+import { randomUUID } from 'crypto';
 import { AuthenticatedRequest, authenticateToken } from '../../middleware/auth.middleware';
 import { authorizeRoles } from '../../middleware/rbac.middleware';
 import {
@@ -57,7 +57,7 @@ router.post('/users', async (req: AuthenticatedRequest, res: Response) => {
 
   const saltRounds = 12;
   const passwordHash = await bcrypt.hash(password, saltRounds);
-  const newUserId = uuidv4();
+  const newUserId = randomUUID();
 
   const newUser: User = {
     id: newUserId,
