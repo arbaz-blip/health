@@ -829,6 +829,26 @@
       "old_values": null,
       "new_values": "{\"email\":\"admin@hospital.com\"}",
       "created_at": "2026-06-30T08:32:31.345Z"
+    },
+    {
+      "id": "log-e8t1oma",
+      "user_id": "u6",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "u6",
+      "old_values": null,
+      "new_values": "{\"email\":\"supervisor@hospital.com\"}",
+      "created_at": "2026-07-04T08:00:59.610Z"
+    },
+    {
+      "id": "log-krlk322",
+      "user_id": "11111111-1111-1111-1111-111111111111",
+      "action": "LOGIN",
+      "table_name": "users",
+      "record_id": "11111111-1111-1111-1111-111111111111",
+      "old_values": null,
+      "new_values": "{\"email\":\"admin@hospital.com\"}",
+      "created_at": "2026-07-04T08:01:06.144Z"
     }
   ],
   "clinicalVisits": [],
@@ -917,6 +937,5 @@
     "hospital_name": "PakMed Care General Hospital",
     "contact_email": "admin@pakmedcare.com.pk",
     "maintenance_mode": false
-  },
-  "billingInvoices": []
+  }
 }

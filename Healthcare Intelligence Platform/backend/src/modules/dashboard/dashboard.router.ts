@@ -6,11 +6,9 @@ import {
   emergencyIntakes,
   emergencyTriages,
   labOrders,
-  billingInvoices,
-  departments,
-  BillingInvoice,
-  BillingInvoiceItem
+  departments
 } from '../../db';
+import { billingInvoices } from '../billing/billing.router';
 
 const router = Router();
 
@@ -23,10 +21,10 @@ router.get('/executive-dashboard', authenticateToken, (req: AuthenticatedRequest
   let pending_revenue = 0;
   const serviceRevenueMap: Record<string, number> = {};
 
-  billingInvoices.forEach((inv: BillingInvoice) => {
+  billingInvoices.forEach((inv: any) => {
     if (inv.payment_status === 'Paid') {
       total_collected_revenue += inv.net_amount;
-      inv.items?.forEach((item: BillingInvoiceItem) => {
+      inv.items?.forEach((item: any) => {
         serviceRevenueMap[item.service_type] = (serviceRevenueMap[item.service_type] || 0) + item.subtotal;
       });
     } else {
